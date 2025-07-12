@@ -1,0 +1,78 @@
+/* Reset and font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #1d1b2f;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Bunny GIF box */
+.bunny-box {
+  background: #fff;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.bunny {
+  width: 100px;
+  height: auto;
+}
+
+/* Stopwatch */
+.stopwatch-box {
+  background: #2d2947;
+  border: 2px solid #c586ff;
+  border-radius: 15px;
+  padding: 30px 10px;
+  margin: 20px auto;
+  box-shadow: 0 0 15px #c586ff66;
+}
+
+.stopwatch h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.start-btn, .stop-btn {
+  padding: 10px 20px;
+  font-size: 12px;
+  background: #c586ff;
+  color: #1d1b2f;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.stop-btn {
+  background: #9b8ecf;
+}
+
+/* Nature Sound Controls */
+.sound-controls {
+  margin-top: 30px;
+  background: #2d2947;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #c586ff55;
+}
+
+.sound-controls h4 {
+  margin-bottom: 15px;
+}
+
+.sound-controls label {
+  display: block;
+  margin: 10px 0;
+  font-size: 10px;
+}

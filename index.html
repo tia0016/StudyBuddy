@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyBuddy Stopwatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 StudyBuddy</h1>
+
+    <!-- Bunny GIF Box -->
+    <div class="bunny-box">
+      <img src="assets/images/bunny.gif" alt="bunny" class="bunny" />
+    </div>
+
+    <!-- Stopwatch -->
+    <div class="stopwatch-box">
+      <div class="stopwatch">
+        <h2 id="time-display">00:00</h2>
+        <button class="start-btn" onclick="startStopwatch()">Start</button>
+        <button class="stop-btn" onclick="stopStopwatch()" disabled>Stop</button>
+      </div>
+    </div>
+
+    <!-- Nature Sound Controls (moved under stopwatch) -->
+    <div class="sound-controls">
+      <h4>🎵 Nature Sounds</h4>
+      <label>Birds <input type="range" id="birds" min="0" max="1" step="0.01" value="0" onchange="adjustVolume()" /></label>
+      <label>Rain <input type="range" id="rain" min="0" max="1" step="0.01" value="0" onchange="adjustVolume()" /></label>
+      <label>Water <input type="range" id="water" min="0" max="1" step="0.01" value="0" onchange="adjustVolume()" /></label>
+      <label>Wind <input type="range" id="wind" min="0" max="1" step="0.01" value="0" onchange="adjustVolume()" /></label>
+      <label>Fire <input type="range" id="fire" min="0" max="1" step="0.01" value="0" onchange="adjustVolume()" /></label>
+    </div>
+
+    <!-- Audio files -->
+    <audio id="birds-sound" loop src="assets/sounds/birds.mp3"></audio>
+    <audio id="rain-sound" loop src="assets/sounds/rain.mp3"></audio>
+    <audio id="water-sound" loop src="assets/sounds/water.mp3"></audio>
+    <audio id="wind-sound" loop src="assets/sounds/wind.mp3"></audio>
+    <audio id="fire-sound" loop src="assets/sounds/fire.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
